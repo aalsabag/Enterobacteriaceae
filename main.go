@@ -50,6 +50,34 @@ func formulateOrQuery(key string, values string) string {
 	return fmt.Sprintf("%s)", query)
 }
 
+func all(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "application/json")
+
+	query := "SELECT bacteria_name FROM biochemical_tests"
+	fmt.Println(query)
+
+	rows, err := dbConnection.Query(query)
+
+	var finalResult Results
+	var tmp string
+
+	defer rows.Close()
+	for rows.Next() {
+		// Scan on record
+		if err := rows.Scan(&tmp); err != nil {
+			fmt.Println("failed to scan result")
+		}
+		finalResult.Results = append(finalResult.Results, tmp)
+	}
+
+	finalResultJSON, err := json.Marshal(finalResult)
+	if err != nil {
+		fmt.Println("Failed to convert result to JSON")
+	}
+
+	w.Write(finalResultJSON)
+}
+
 func query(w http.ResponseWriter, r *http.Request) {
 	r.ParseForm()
 	w.Header().Set("Content-Type", "application/json")
@@ -119,6 +147,7 @@ func main() {
 	}
 
 	http.HandleFunc("/query", query)
+	http.HandleFunc("/all", all)
 
 	log.Fatal(http.ListenAndServe(listenPort, nil))
 
