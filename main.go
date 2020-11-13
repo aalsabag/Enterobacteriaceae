@@ -96,7 +96,7 @@ func query(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	flag.StringVar(&dbHost, "db_host", "127.0.0.1", "database hostname e.x. 127.0.0.1")
+	flag.StringVar(&dbHost, "db_host", "localhost", "database hostname e.x. 127.0.0.1")
 	flag.StringVar(&dbPort, "db_port", "9001", "database port e.x. 9001")
 	flag.StringVar(&dbUsername, "db_username", "root", "database username, must have access to db e.x. root")
 	flag.StringVar(&dbPassword, "db_password", "testroot", "username password")
@@ -106,7 +106,7 @@ func main() {
 	flag.Parse()
 
 	connectionString := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s", dbUsername, dbPassword, dbHost, dbPort, dbName)
-
+	fmt.Printf("Connection String: %s \n", connectionString)
 	var err error
 	dbConnection, err = sql.Open("mysql", connectionString)
 

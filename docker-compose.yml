@@ -1,6 +1,19 @@
 version: '3'
  
 services:
+  backend:
+    command: ./main --db_host=db --db_port=3306
+    depends_on:
+      - db
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    ports:
+      - "9002:9002"
+    links:
+      - db
+    networks:
+      - main-service
   db:
     image: mysql:5
     container_name: db
@@ -13,3 +26,7 @@ services:
       - "9001:3306"
     volumes:
       - ./mysql:/docker-entrypoint-initdb.d
+    networks:
+      - main-service
+networks:
+  main-service:

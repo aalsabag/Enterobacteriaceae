@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS biochemical_tests (
     voges_proskauer INT,
     citrate_simmons INT,
     hydrogen_sulfide INT
-)
+);
 -- 1 indicates 90%-100% of the strains are positive
 -- 2 indicates 76%-89% of the strains are positive
 -- 3 indicates 26%-75% of the strains are positive
