@@ -51,7 +51,10 @@ func formulateOrQuery(key string, values string) string {
 }
 
 func all(w http.ResponseWriter, r *http.Request) {
+
 	w.Header().Set("Content-Type", "application/json")
+	w.Header().Set("Access-Control-Allow-Origin", "*")
+	w.Header().Set("Access-Control-Allow-Methods", "GET")
 
 	query := "SELECT bacteria_name FROM biochemical_tests"
 	fmt.Println(query)
@@ -79,6 +82,10 @@ func all(w http.ResponseWriter, r *http.Request) {
 }
 
 func query(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "application/json")
+	w.Header().Set("Access-Control-Allow-Origin", "*")
+	w.Header().Set("Access-Control-Allow-Methods", "GET")
+
 	r.ParseForm()
 	w.Header().Set("Content-Type", "application/json")
 
