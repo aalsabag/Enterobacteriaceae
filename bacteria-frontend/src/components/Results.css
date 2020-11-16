@@ -1,0 +1,19 @@
+#result-container {
+    padding-top: 10%;
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 20px;
+    max-width: 100%;
+}
+
+.result-element {
+    border-radius: 25px;
+    background: #73AD21; 
+    display: inline-block;
+    overflow: auto;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 20px;
+    max-width: 100%;
+  }

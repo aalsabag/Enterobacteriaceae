@@ -6,7 +6,11 @@ function App() {
   return (
     <div className="Bacteria-Frontend">
       <header className="bacteria-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <div id="title-bar">
+          <img src={logo} className="App-logo" alt="logo" id="logo-left"/>
+          <div id="title-text">Identifying Enterobacteriaceae</div>
+          <img src={logo} className="App-logo" alt="logo"id="logo-right" />
+        </div>
         <FullForm />
       </header>
     </div>

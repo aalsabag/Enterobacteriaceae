@@ -1,0 +1,12 @@
+#full-section {
+    display: flex;                  /* establish flex container */
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+}
+
+.section {
+    width: 25%;
+    max-width: 25%;
+}

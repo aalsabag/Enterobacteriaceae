@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import FormField from './FormField';
-
+import './FullForm.css';
+import Results from './Results.js';
 export default class FullForm extends Component {
     
     constructor(props) {
@@ -8,10 +9,12 @@ export default class FullForm extends Component {
         this.handler = this.handler.bind(this);
 
         this.state = {
-            messageShown: false
+            messageShown: false,
+            resultList: []
         };
         this.currentSelected = new Map()
         this.url = "http://localhost:9002/query";
+        this.resultList = []
     }
 
     // Makes API call to fetch bacteria results
@@ -27,7 +30,8 @@ export default class FullForm extends Component {
             console.log("Making an API call")
             console.log("parsed json response", json)
 
-            console.log("Bacteria matching the criteria", json.results )
+            console.log("Bacteria matching the criteria", json.results)
+            this.setState({resultList: json.results})
           })
     }
 
@@ -57,7 +61,8 @@ export default class FullForm extends Component {
 
     render() {
         return(
-          <div>
+          <div id="full-section">
+            <div class="section">
             <FormField title="Indole production" keyValue="indole" action={this.handler}/>
             <FormField title="Methyl Red" keyValue="methyl_red" action={this.handler}/>
             <FormField title="Voges-Proskauer" keyValue="voges_proskauer" action={this.handler}/>
@@ -69,7 +74,9 @@ export default class FullForm extends Component {
             <FormField title="Lysine decarboxylase" keyValue="lysine_decarboxylase" action={this.handler}/>  
             <FormField title="Arginine dihydrolase" keyValue="arginine_dihydrolase" action={this.handler}/>  
             <FormField title="Ornithine decarboxylase" keyValue="ornithine_decarboxylase" action={this.handler}/> 
+            </div>
 
+            <div class="section">
             <FormField title="Motility" keyValue="motility" action={this.handler}/>
             <FormField title="Gelatin Liquefaction at 22C" keyValue="gelatin" action={this.handler}/> 
             <FormField title="KCN, growth in" keyValue="kcn" action={this.handler}/> 
@@ -87,7 +94,9 @@ export default class FullForm extends Component {
             <FormField title="myo-Inositol" keyValue="myo_inositol" action={this.handler}/> 
             <FormField title="D-Sorbitol" keyValue="dsorbitol" action={this.handler}/> 
             <FormField title="L-Arabinose" keyValue="larabinose" action={this.handler}/> 
+            </div>
 
+            <div class="section">
             <FormField title="Raffinose" keyValue="raffinose" action={this.handler}/>
             <FormField title="L-Rhamnose" keyValue="lrhamnose" action={this.handler}/> 
             <FormField title="Maltose" keyValue="maltose" action={this.handler}/> 
@@ -109,8 +118,12 @@ export default class FullForm extends Component {
 
             <FormField title="Yellow pigment" keyValue="yellow" action={this.handler}/> 
             <FormField title="D-Mannose" keyValue="dmannose" action={this.handler}/> 
+            </div>
 
-
+            <div id="results" class="section">
+            <Results resultList={this.state.resultList}></Results>
+            </div>
+              
           </div>
         )
       }
