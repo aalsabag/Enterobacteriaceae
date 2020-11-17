@@ -13,12 +13,32 @@ export default class FullForm extends Component {
             resultList: []
         };
         this.currentSelected = new Map()
-        this.url = "http://localhost:9002/query";
-        this.resultList = []
+        this.url = process.env.REACT_APP_BACKEND_URL + "/"
+        this.resultList = this.getAllResults()
+    }
+
+    // Makes API call to fetch all bacteria
+    getAllResults() {
+      var requestOptions = {
+          method: 'GET',
+          redirect: 'follow'
+        };
+
+      fetch(this.url + "all",requestOptions).then(response => response.json()).then(json=>{
+          console.log("Making an API call")
+          console.log("parsed json response", json)
+
+          console.log("Bacteria matching the criteria", json.results)
+          this.setState({resultList: json.results})
+        })
     }
 
     // Makes API call to fetch bacteria results
     getResults() {
+        if (this.currentSelected.size === 0){
+          this.getAllResults()
+          return
+        }
         var searchParams = new URLSearchParams(this.currentSelected)
 
         var requestOptions = {
@@ -26,7 +46,7 @@ export default class FullForm extends Component {
             redirect: 'follow'
           };
 
-        fetch(this.url + "?"+searchParams,requestOptions).then(response => response.json()).then(json=>{
+        fetch(this.url + "query?"+searchParams,requestOptions).then(response => response.json()).then(json=>{
             console.log("Making an API call")
             console.log("parsed json response", json)
 
@@ -54,7 +74,11 @@ export default class FullForm extends Component {
     handler(selectedList, keyValue) {
         console.log("FormField updated!")
         var commaSeparatedList = this.getCommaSeparatedList(selectedList)
-        this.currentSelected.set(keyValue,commaSeparatedList)
+        if (commaSeparatedList == "" && this.currentSelected.has(keyValue)) {
+          this.currentSelected.delete(keyValue)
+        } else {
+          this.currentSelected.set(keyValue,commaSeparatedList)
+        }
         console.log(this.currentSelected)
         this.getResults()
     }
@@ -74,15 +98,15 @@ export default class FullForm extends Component {
             <FormField title="Lysine decarboxylase" keyValue="lysine_decarboxylase" action={this.handler}/>  
             <FormField title="Arginine dihydrolase" keyValue="arginine_dihydrolase" action={this.handler}/>  
             <FormField title="Ornithine decarboxylase" keyValue="ornithine_decarboxylase" action={this.handler}/> 
-            </div>
-
-            <div class="section">
+            
             <FormField title="Motility" keyValue="motility" action={this.handler}/>
             <FormField title="Gelatin Liquefaction at 22C" keyValue="gelatin" action={this.handler}/> 
             <FormField title="KCN, growth in" keyValue="kcn" action={this.handler}/> 
             <FormField title="Malonate Utilization" keyValue="malonate_utilization" action={this.handler}/> 
+            </div>
+            <div class="section">
             <FormField title="D-Glucose, acid production" keyValue="acid_production" action={this.handler}/> 
-
+            
             <FormField title="D-Glucose, gas production" keyValue="gas_production" action={this.handler}/> 
             <FormField title="Lactose" keyValue="lactose" action={this.handler}/> 
             <FormField title="Sucrose" keyValue="sucrose" action={this.handler}/> 
@@ -94,15 +118,15 @@ export default class FullForm extends Component {
             <FormField title="myo-Inositol" keyValue="myo_inositol" action={this.handler}/> 
             <FormField title="D-Sorbitol" keyValue="dsorbitol" action={this.handler}/> 
             <FormField title="L-Arabinose" keyValue="larabinose" action={this.handler}/> 
-            </div>
-
-            <div class="section">
+            
             <FormField title="Raffinose" keyValue="raffinose" action={this.handler}/>
             <FormField title="L-Rhamnose" keyValue="lrhamnose" action={this.handler}/> 
             <FormField title="Maltose" keyValue="maltose" action={this.handler}/> 
             <FormField title="D-Xylose" keyValue="dxylose" action={this.handler}/> 
+            </div>
+            <div class="section">
             <FormField title="Trehalose" keyValue="trehalose" action={this.handler}/> 
-
+            
             <FormField title="Cellobiose" keyValue="cellobiose" action={this.handler}/> 
             <FormField title="α-Methyl-D-glucoside" keyValue="methyl_glucoside" action={this.handler}/> 
             <FormField title="Esculin hydrolysis" keyValue="esculing" action={this.handler}/> 

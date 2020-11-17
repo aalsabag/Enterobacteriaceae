@@ -1,6 +1,18 @@
 version: '3'
  
 services:
+  frontend:
+    depends_on:
+      - backend
+    build:
+      context: ./bacteria-frontend
+      dockerfile: Dockerfile.frontend
+    ports:
+      - "9003:9003"
+    links:
+      - backend
+    networks:
+      - main-service
   backend:
     command: ./main --db_host=db --db_port=3306
     depends_on:
@@ -17,6 +29,7 @@ services:
   db:
     image: mysql:5
     container_name: db
+    command: --max_allowed_packet=32505856
     environment:
       MYSQL_ROOT_PASSWORD: testroot
       MYSQL_DATABASE: bacteria

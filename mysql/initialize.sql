@@ -58,10 +58,65 @@ CREATE TABLE IF NOT EXISTS biochemical_tests (
 -- INSERT INTO `biochemical_tests` (`bacteria_name`,`indole`,`methyl_red`,`voges_proskauer`,`citrate_simmons`,`hydrogen_sulfide`,`urease`,`phenylalanine_deamin`,`lysine_decarboxylase`,`arginine_dihydrolase`,`ornithine_decarboxyl`,`motility`,`gelatin`,`kcn`,`malonate_utilization`,`acid_production`,`gas_production`,`lactose`,`sucrose`,`dmannitol`,`dulcitol`,`salicin`,`dadonitol`,`myo_inositol`,`dsorbitol`,`larabinose`,`raffinose`,`lrhamnose`,`maltose`,`dxylose`,`trehalose`,`cellobiose`,`methyl_glucoside`,`esculing`,`melibiose`,`darabitol`,`mucate`,`lipase`,`drn`,`nitrate`,`oxidase`,`onpg`,`yellow`,`dmannose`) VALUES ('Salmonella IV', 5, 1, 5, 1, 1);
 -- INSERT INTO `biochemical_tests` (`bacteria_name`,`indole`,`methyl_red`,`voges_proskauer`,`citrate_simmons`,`hydrogen_sulfide`,`urease`,`phenylalanine_deamin`,`lysine_decarboxylase`,`arginine_dihydrolase`,`ornithine_decarboxyl`,`motility`,`gelatin`,`kcn`,`malonate_utilization`,`acid_production`,`gas_production`,`lactose`,`sucrose`,`dmannitol`,`dulcitol`,`salicin`,`dadonitol`,`myo_inositol`,`dsorbitol`,`larabinose`,`raffinose`,`lrhamnose`,`maltose`,`dxylose`,`trehalose`,`cellobiose`,`methyl_glucoside`,`esculing`,`melibiose`,`darabitol`,`mucate`,`lipase`,`drn`,`nitrate`,`oxidase`,`onpg`,`yellow`,`dmannose`) VALUES ('Salmonella choleraesuis', 5, 1, 5, 4, 3);
 
-INSERT INTO `biochemical_tests` (`bacteria_name`,`indole`,`methyl_red`,`voges_proskauer`,`citrate_simmons`,`hydrogen_sulfide`,`urease`,`phenylalanine_deamin`,`lysine_decarboxylase`,`arginine_dihydrolase`,`ornithine_decarboxyl`,`motility`,`gelatin`,`kcn`,`malonate_utilization`,`acid_production`,`gas_production`,`lactose`,`sucrose`,`dmannitol`,`dulcitol`,`salicin`,`dadonitol`,`myo_inositol`,`dsorbitol`,`larabinose`,`raffinose`,`lrhamnose`,`maltose`,`dxylose`,`trehalose`,`cellobiose`,`methyl_glucoside`,`esculing`,`melibiose`,`darabitol`,`mucate`,`lipase`,`drn`,`nitrate`,`oxidase`,`onpg`,`yellow`,`dmannose`) VALUES ('Cedecea Davisoe', 5,1,2,1,5,5,5,5,3,1,1,5,2,2,1,2,5,1,1,5,1,5,5,5,5,5,5,1,1,1,1,5,3,5,1,5,2,5,1,5,2,5,1);
-INSERT INTO `biochemical_tests` (`bacteria_name`,`indole`,`methyl_red`,`voges_proskauer`,`citrate_simmons`,`hydrogen_sulfide`,`urease`,`phenylalanine_deamin`,`lysine_decarboxylase`,`arginine_dihydrolase`,`ornithine_decarboxyl`,`motility`,`gelatin`,`kcn`,`malonate_utilization`,`acid_production`,`gas_production`,`lactose`,`sucrose`,`dmannitol`,`dulcitol`,`salicin`,`dadonitol`,`myo_inositol`,`dsorbitol`,`larabinose`,`raffinose`,`lrhamnose`,`maltose`,`dxylose`,`trehalose`,`cellobiose`,`methyl_glucoside`,`esculing`,`melibiose`,`darabitol`,`mucate`,`lipase`,`drn`,`nitrate`,`oxidase`,`onpg`,`yellow`,`dmannose`) VALUES ('Cedecea lapagei', 5,3,1,2,5,5,5,5,2,5,2,5,3,1,1,1,3,5,1,5,1,5,5,5,5,5,5,1,5,1,1,5,1,5,1,5,1,5,1,5,1,5,1);
-INSERT INTO `biochemical_tests` (`bacteria_name`,`indole`,`methyl_red`,`voges_proskauer`,`citrate_simmons`,`hydrogen_sulfide`,`urease`,`phenylalanine_deamin`,`lysine_decarboxylase`,`arginine_dihydrolase`,`ornithine_decarboxyl`,`motility`,`gelatin`,`kcn`,`malonate_utilization`,`acid_production`,`gas_production`,`lactose`,`sucrose`,`dmannitol`,`dulcitol`,`salicin`,`dadonitol`,`myo_inositol`,`dsorbitol`,`larabinose`,`raffinose`,`lrhamnose`,`maltose`,`dxylose`,`trehalose`,`cellobiose`,`methyl_glucoside`,`esculing`,`melibiose`,`darabitol`,`mucate`,`lipase`,`drn`,`nitrate`,`oxidase`,`onpg`,`yellow`,`dmannose`) VALUES ('Citrobacter amalonaticus', 1,1,5,2,5,2,5,5,2,1,1,5,1,4,1,1,3,4,1,5,3,5,5,1,1,5,1,1,1,1,1,5,5,4,5,1,5,5,1,5,1,5,1);
-INSERT INTO `biochemical_tests` (`bacteria_name`,`indole`,`methyl_red`,`voges_proskauer`,`citrate_simmons`,`hydrogen_sulfide`,`urease`,`phenylalanine_deamin`,`lysine_decarboxylase`,`arginine_dihydrolase`,`ornithine_decarboxyl`,`motility`,`gelatin`,`kcn`,`malonate_utilization`,`acid_production`,`gas_production`,`lactose`,`sucrose`,`dmannitol`,`dulcitol`,`salicin`,`dadonitol`,`myo_inositol`,`dsorbitol`,`larabinose`,`raffinose`,`lrhamnose`,`maltose`,`dxylose`,`trehalose`,`cellobiose`,`methyl_glucoside`,`esculing`,`melibiose`,`darabitol`,`mucate`,`lipase`,`drn`,`nitrate`,`oxidase`,`onpg`,`yellow`,`dmannose`) VALUES ('Citrobacter diversus', 1,1,5,1,5,2,5,5,3,1,1,5,5,1,1,1,3,4,1,3,4,1,5,1,1,5,1,1,1,1,1,3,5,5,1,1,5,5,1,5,1,5,1);
-INSERT INTO `biochemical_tests` (`bacteria_name`,`indole`,`methyl_red`,`voges_proskauer`,`citrate_simmons`,`hydrogen_sulfide`,`urease`,`phenylalanine_deamin`,`lysine_decarboxylase`,`arginine_dihydrolase`,`ornithine_decarboxyl`,`motility`,`gelatin`,`kcn`,`malonate_utilization`,`acid_production`,`gas_production`,`lactose`,`sucrose`,`dmannitol`,`dulcitol`,`salicin`,`dadonitol`,`myo_inositol`,`dsorbitol`,`larabinose`,`raffinose`,`lrhamnose`,`maltose`,`dxylose`,`trehalose`,`cellobiose`,`methyl_glucoside`,`esculing`,`melibiose`,`darabitol`,`mucate`,`lipase`,`drn`,`nitrate`,`oxidase`,`onpg`,`yellow`,`dmannose`) VALUES ('Citrobacter freundii', 5,1,5,1,2,3,5,5,3,4,1,5,1,4,1,1,3,3,1,3,5,5,5,1,1,3,1,1,1,1,3,5,5,3,5,1,5,5,1,5,1,5,1);
-INSERT INTO `biochemical_tests` (`bacteria_name`,`indole`,`methyl_red`,`voges_proskauer`,`citrate_simmons`,`hydrogen_sulfide`,`urease`,`phenylalanine_deamin`,`lysine_decarboxylase`,`arginine_dihydrolase`,`ornithine_decarboxyl`,`motility`,`gelatin`,`kcn`,`malonate_utilization`,`acid_production`,`gas_production`,`lactose`,`sucrose`,`dmannitol`,`dulcitol`,`salicin`,`dadonitol`,`myo_inositol`,`dsorbitol`,`larabinose`,`raffinose`,`lrhamnose`,`maltose`,`dxylose`,`trehalose`,`cellobiose`,`methyl_glucoside`,`esculing`,`melibiose`,`darabitol`,`mucate`,`lipase`,`drn`,`nitrate`,`oxidase`,`onpg`,`yellow`,`dmannose`) VALUES ('Edwardsiella hoshinai', 4,1,5,5,5,5,5,1,5,1,1,5,5,1,1,3,5,1,1,5,3,5,5,5,4,5,5,1,5,1,5,5,5,5,5,5,5,5,1,5,5,5,1);
-INSERT INTO `biochemical_tests` (`bacteria_name`,`indole`,`methyl_red`,`voges_proskauer`,`citrate_simmons`,`hydrogen_sulfide`,`urease`,`phenylalanine_deamin`,`lysine_decarboxylase`,`arginine_dihydrolase`,`ornithine_decarboxyl`,`motility`,`gelatin`,`kcn`,`malonate_utilization`,`acid_production`,`gas_production`,`lactose`,`sucrose`,`dmannitol`,`dulcitol`,`salicin`,`dadonitol`,`myo_inositol`,`dsorbitol`,`larabinose`,`raffinose`,`lrhamnose`,`maltose`,`dxylose`,`trehalose`,`cellobiose`,`methyl_glucoside`,`esculing`,`melibiose`,`darabitol`,`mucate`,`lipase`,`drn`,`nitrate`,`oxidase`,`onpg`,`yellow`,`dmannose`) VALUES ('Edwardsiella ictaluri', 5,5,5,5,5,5,5,1,5,3,5,5,5,5,1,3,5,5,5,5,5,5,5,5,5,5,5,1,5,5,5,5,5,5,5,5,5,5,1,5,5,5,1);
+INSERT INTO 
+`biochemical_tests` (`bacteria_name`,`indole`,`methyl_red`,`voges_proskauer`,`citrate_simmons`,`hydrogen_sulfide`,`urease`,`phenylalanine_deamin`,`lysine_decarboxylase`,`arginine_dihydrolase`,`ornithine_decarboxyl`,`motility`,`gelatin`,`kcn`,`malonate_utilization`,`acid_production`,`gas_production`,`lactose`,`sucrose`,`dmannitol`,`dulcitol`,`salicin`,`dadonitol`,`myo_inositol`,`dsorbitol`,`larabinose`,`raffinose`,`lrhamnose`,`maltose`,`dxylose`,`trehalose`,`cellobiose`,`methyl_glucoside`,`esculing`,`melibiose`,`darabitol`,`mucate`,`lipase`,`drn`,`nitrate`,`oxidase`,`onpg`,`yellow`,`dmannose`) 
+VALUES 
+ ('Cedecea davisoe', 5,1,2,1,5,5,5,5,3,1,1,5,2,2,1,2,5,1,1,5,1,5,5,5,5,5,5,1,1,1,1,5,3,5,1,5,2,5,1,5,2,5,1),
+ ('Cedecea lapagei', 5,3,1,2,5,5,5,5,2,5,2,5,3,1,1,1,3,5,1,5,1,5,5,5,5,5,5,1,5,1,1,5,1,5,1,5,1,5,1,5,1,5,1),
+ ('Citrobacter amalonaticus', 1,1,5,2,5,2,5,5,2,1,1,5,1,4,1,1,3,4,1,5,3,5,5,1,1,5,1,1,1,1,1,5,5,4,5,1,5,5,1,5,1,5,1),
+ ('Citrobacter diversus', 1,1,5,1,5,2,5,5,3,1,1,5,5,1,1,1,3,4,1,3,4,1,5,1,1,5,1,1,1,1,1,3,5,5,1,1,5,5,1,5,1,5,1),
+ ('Citrobacter freundii', 5,1,5,1,2,3,5,5,3,4,1,5,1,4,1,1,3,3,1,3,5,5,5,1,1,3,1,1,1,1,3,5,5,3,5,1,5,5,1,5,1,5,1),
+ ('Edwardsiella hoshinai', 4,1,5,5,5,5,5,1,5,1,1,5,5,1,1,3,5,1,1,5,3,5,5,5,4,5,5,1,5,1,5,5,5,5,5,5,5,5,1,5,5,5,1),
+ ('Edwardsiella ictaluri', 5,5,5,5,5,5,5,1,5,3,5,5,5,5,1,3,5,5,5,5,5,5,5,5,5,5,5,1,5,5,5,5,5,5,5,5,5,5,1,5,5,5,1),
+ ('Edwardsiella tarda',1,1,5,5,1,5,5,1,5,1,1,5,5,5,1,1,5,5,5,5,5,5,5,5,5,5,5,1,5,5,5,5,5,5,5,5,5,5,1,5,5,5,1),
+ ('Edwardsiella tarda biogroup 1',1,1,5,5,5,5,5,1,5,1,1,5,5,5,1,3,5,1,1,5,5,5,5,5,1,5,5,1,5,5,5,5,5,5,5,5,5,5,1,5,5,5,1),
+ ('Enterobacter aerogenes',5,5,1,1,5,5,5,1,5,1,1,5,1,1,1,1,1,1,1,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,5,5,1,5,1,5,1),
+ ('Enterobacter agglomerans',4,3,3,3,5,4,4,5,5,5,2,5,3,3,1,4,3,2,1,4,3,5,4,3,1,3,2,2,1,1,3,5,3,3,3,3,5,5,2,5,1,2,1),
+ ('Enterobacter cloacae',5,5,1,1,5,3,5,5,1,1,1,5,1,2,1,1,1,1,1,4,2,4,4,1,1,1,1,1,1,1,1,2,3,1,4,2,5,5,1,5,1,5,1),
+ ('Enterobacter gergoviae',5,3,1,1,5,1,5,1,5,1,1,5,5,1,1,1,3,1,1,5,1,5,5,5,1,1,1,1,1,1,1,5,1,1,1,5,5,5,1,5,1,5,1),
+ ('Enterobacter intermedium',5,3,1,1,5,3,5,5,3,1,1,5,1,1,1,1,1,3,1,3,1,5,5,1,1,1,1,1,1,1,1,3,3,3,5,3,5,5,1,5,3,5,1),
+ ('Enterobacter sakazakii',4,4,1,1,5,5,3,5,1,1,1,5,1,4,1,1,1,1,1,5,1,5,2,5,1,1,1,1,1,1,1,1,1,1,5,5,5,5,1,5,1,1,1),
+ ('Escherichia adecarboxylata',1,1,5,5,5,3,5,5,5,5,1,3,1,3,1,1,1,1,1,1,1,1,5,5,1,1,1,1,1,1,1,5,1,1,1,1,5,5,1,5,1,1,1),
+ ('Escherichia blatae',5,1,5,3,5,5,5,1,5,1,5,5,5,1,1,1,5,5,5,5,5,5,5,5,1,5,1,1,1,2,5,5,5,5,5,3,5,5,1,5,5,5,1),
+ ('Escherichia coli',1,1,5,5,5,5,5,2,4,3,2,5,5,5,1,1,1,3,1,3,3,5,5,1,1,3,2,1,1,1,5,5,3,2,5,1,5,5,1,5,1,5,1),
+ ('Escherichia coli, inactive',2,1,5,5,5,5,5,3,5,4,5,5,5,5,1,5,4,4,1,3,5,5,5,2,2,4,3,2,3,1,5,5,5,3,5,3,5,5,1,5,3,5,1),
+ ('Hafnia alvei',5,3,3,5,5,5,5,1,5,1,1,5,1,3,1,1,5,5,1,5,4,5,5,5,1,5,1,1,1,1,4,5,5,5,5,5,5,5,1,5,1,5,1),
+ ('Klebsiella oxytoca',1,3,1,1,5,1,5,1,5,5,5,5,1,1,1,1,1,1,1,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,5,5,1,5,1,5,1),
+ ('subsp. ozaenae',5,1,5,3,5,5,5,3,5,5,5,5,2,5,1,3,3,4,1,5,1,1,3,2,1,1,3,1,1,1,1,3,2,1,1,4,5,5,2,5,2,5,1),
+ ('subsp. pneumoniae',5,4,1,1,5,1,5,1,5,5,5,5,1,1,1,1,1,1,1,3,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,2,5,5,1,5,1,5,1),
+ ('subsp. rhinoscleromatis',5,1,5,5,5,5,5,5,5,5,5,5,1,1,1,5,5,2,1,5,1,1,1,1,1,2,1,1,1,1,1,5,3,1,1,5,5,5,1,5,5,5,1),
+ ('Kluyvera ascorbata',2,1,5,1,5,5,5,1,5,1,1,5,1,1,1,1,1,1,1,4,1,5,5,3,1,1,1,1,1,1,1,1,1,1,5,1,5,5,1,5,1,5,1),
+ ('Kluyvera cryocrescens',2,1,5,2,5,5,5,3,5,1,2,5,2,2,1,1,1,2,1,5,1,5,5,3,1,1,1,1,1,1,1,1,1,1,5,2,5,5,1,5,1,5,1),
+ ('Morganella morganii',1,1,5,5,5,1,1,5,5,1,1,5,1,5,1,2,5,5,5,5,5,5,5,5,5,5,5,5,5,4,5,5,5,5,5,5,5,5,2,5,5,5,1),
+ ('Obesumbacterium proteus biogroup 1',5,1,3,5,5,5,5,1,5,5,5,5,5,5,1,5,5,5,1,5,1,5,5,5,5,5,5,5,5,1,5,5,5,5,5,5,5,5,1,5,5,5,1),
+ ('Obesumbacterium proteus biogroup 2',5,5,5,5,5,5,5,1,5,1,5,5,5,5,1,5,5,5,5,5,5,5,5,5,5,5,3,3,3,1,5,5,5,5,5,5,5,5,1,5,5,5,2),
+ ('Proteus mirabilis',5,1,4,3,1,1,1,5,5,1,1,1,1,5,1,1,5,4,5,5,5,5,5,5,5,5,5,5,1,1,5,5,5,5,5,5,1,5,1,5,5,5,5),
+ ('Proteus myxofaciens',5,1,1,3,5,1,1,5,5,5,1,1,1,5,1,1,5,1,5,5,5,5,5,5,5,5,5,1,5,1,5,1,5,5,5,5,1,5,1,5,5,5,5),
+ ('Proteus vulgaris',1,1,5,4,1,1,1,5,5,5,1,1,1,5,1,2,5,1,5,5,2,5,5,5,5,5,5,1,1,3,5,2,2,5,5,5,2,3,1,5,5,5,5),
+ ('Providencia alcalifaciens',1,1,5,1,5,5,1,5,5,5,1,5,1,5,1,2,5,4,5,5,5,1,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,1,5,5,5,1),
+ ('Providencia rettgeri',1,1,5,1,5,1,1,5,5,5,1,5,1,5,1,5,5,4,1,5,3,1,1,5,5,5,3,5,5,5,5,5,3,5,1,5,5,5,1,5,5,5,1),
+ ('Providencia stuartii',1,1,5,1,5,3,1,5,5,5,2,5,1,5,1,5,5,3,4,5,5,5,1,5,5,5,5,5,5,1,5,5,5,5,5,5,5,5,1,5,5,5,1),
+ ('Rahnella aquatilis',5,2,1,1,5,5,1,5,5,5,5,5,5,1,1,2,1,1,1,2,1,5,5,1,1,1,1,1,1,1,1,5,1,1,5,3,5,5,1,5,1,5,1),
+ ('Salmonella I',5,1,5,1,1,5,5,1,3,1,1,5,5,5,1,1,5,5,1,1,5,5,3,1,1,5,1,1,1,1,5,5,5,1,5,1,5,5,1,5,5,5,1),
+ ('Salmonella II',5,1,5,1,1,5,5,1,1,1,1,5,5,1,1,1,5,5,1,1,5,5,4,1,1,5,1,1,1,1,5,5,5,1,5,1,5,5,1,5,3,5,1),
+ ('Salmonella III = Arizona',5,1,5,1,1,5,5,1,2,1,1,5,5,1,1,1,3,5,1,5,5,5,5,1,1,5,1,1,1,1,5,5,5,1,5,3,5,5,1,5,1,5,1),
+ ('Salmonella IV',5,1,5,1,1,5,5,1,3,1,1,5,1,5,1,1,5,5,1,5,3,5,3,1,1,5,1,1,1,1,4,5,5,1,5,5,5,5,1,5,5,5,1),
+ ('Salmonella choleraesuis',5,1,5,4,3,5,5,1,3,1,1,5,5,5,1,1,5,5,1,5,5,5,5,2,5,5,1,1,1,5,5,5,5,3,5,5,5,5,1,5,5,5,2),
+ ('Salmonella gallinarum',5,1,5,5,1,5,5,1,5,5,5,5,5,5,1,5,5,5,1,1,5,5,5,5,2,5,5,1,3,3,5,5,5,5,5,3,5,5,1,5,5,5,1),
+ ('Salmonella paratyphi A',5,1,5,5,5,5,5,5,4,1,1,5,5,5,1,1,5,5,1,1,5,5,5,1,1,5,1,1,5,1,4,5,5,1,5,5,5,5,1,5,5,5,1),
+ ('Salmonella pullorum',5,1,5,5,1,5,5,1,3,1,5,5,5,5,1,2,5,5,1,5,5,5,5,4,1,5,1,5,2,2,5,5,5,5,5,5,5,5,1,5,5,5,1),
+ ('Salmonella typhi',5,1,5,5,1,5,5,1,5,5,1,5,5,5,1,5,5,5,1,5,5,5,5,1,5,5,5,1,2,1,5,5,5,1,5,5,5,5,1,5,5,5,1),
+ ('Serratia ficaria',5,2,2,1,5,5,5,5,5,5,1,1,3,5,1,5,4,1,1,5,1,5,3,1,1,3,3,1,1,1,1,5,1,3,1,5,2,1,1,5,1,5,1),
+ ('Serratia fonticola',5,1,5,1,5,4,5,1,5,1,1,5,3,1,1,2,1,4,1,1,1,1,3,1,1,1,3,1,2,1,5,1,1,1,1,5,5,5,1,5,1,5,1),
+ ('Serratia liquefaciens',5,2,2,1,5,5,5,1,5,1,1,1,1,5,1,3,5,1,1,5,1,5,3,2,1,1,4,1,1,1,4,5,1,2,5,5,2,1,1,5,1,5,1),
+ ('Serratia marcescens',5,4,1,1,5,4,5,1,5,1,1,1,1,5,1,3,5,1,1,5,1,3,2,1,5,5,5,1,5,1,4,5,1,5,5,5,1,1,1,5,1,5,1),
+ ('Serratia odorifera',3,2,2,1,5,5,5,1,5,3,1,1,3,5,1,5,1,3,1,5,3,3,1,1,1,3,1,1,1,1,1,5,3,1,5,5,3,1,1,5,1,5,1),
+ ('Serratia plymuthica',5,1,3,3,5,5,5,5,5,5,3,3,3,5,1,3,2,1,1,5,1,5,3,3,1,1,5,1,1,1,2,3,2,1,5,5,3,1,1,5,2,5,1),
+ ('Serratia rubidaea',5,4,1,1,5,5,5,3,5,5,2,1,4,2,1,3,1,1,1,5,1,1,4,5,1,1,5,1,1,1,1,5,1,1,1,5,1,1,1,5,1,5,1),
+ ('Shigella boydii',4,1,5,5,5,5,5,5,4,5,5,5,5,5,1,5,5,5,1,5,5,5,5,3,1,5,5,4,4,2,5,5,5,4,5,5,5,5,1,5,5,5,1),
+ ('Shigella dysenteriae',3,1,5,5,5,5,5,5,5,5,5,5,5,5,1,5,5,5,5,5,5,5,5,3,3,5,3,4,5,2,5,5,5,5,5,5,5,5,1,5,3,5,1),
+ ('Shigella flexneri',3,1,5,5,5,5,5,5,5,5,5,5,5,5,1,5,5,5,1,5,5,5,5,3,3,3,5,3,5,3,5,5,5,3,5,5,5,5,1,5,5,5,1),
+ ('Shigella sonnei',5,1,5,5,5,5,5,5,5,1,5,5,5,5,1,5,5,5,1,5,5,5,5,5,1,5,2,1,5,1,5,5,5,4,5,5,5,5,1,5,2,5,1),
+ ('Tatumella ptyseos',5,5,4,5,5,5,2,5,5,5,5,5,5,5,1,5,5,1,5,5,3,5,5,5,5,4,5,5,5,1,5,5,5,3,5,5,5,5,1,5,5,5,1),
+ ('Yersinia enterocolitica',3,1,5,5,5,2,5,5,5,1,5,5,5,5,1,5,5,1,1,5,3,5,3,1,1,5,5,3,3,1,2,5,4,5,3,5,3,5,1,5,1,5,1);
+

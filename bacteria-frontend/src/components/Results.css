@@ -9,11 +9,99 @@
 
 .result-element {
     border-radius: 25px;
-    background: #73AD21; 
-    display: inline-block;
+    display: inline-flex;
     overflow: auto;
     text-align: center;
     padding-left: 10px;
     padding-right: 20px;
     max-width: 100%;
+    animation: slideMe .7s ease-in;
   }
+
+  .result-element:hover {
+    opacity: 0.5;
+  }
+
+  @keyframes slideMe{
+    0%{
+        transform: skewX(53deg) translateX(-500px);
+        opacity: 0;
+    }
+    60%{
+        transform: translateX(0px);
+    }
+    62%{
+        transform: skewX(0deg) translateX(30px);
+    }
+    70%{
+        transform: skew(-20deg);
+        opacity: 1;
+    }
+    80%{
+        transform: skew(0deg) translate(0);
+    }
+    90%{
+        transform: skew(-5deg);
+    }
+    100%{
+        transform: skew(0deg);
+    }
+}
+/* Unique Colors for each genus */
+.Cedecea {
+    background: aqua;
+}
+.Citrobacter {
+    background: bisque;
+}
+.Edwardsiella {
+    background: cadetblue;
+}
+.Enterobacter {
+    background: darksalmon;
+}
+.Escherichia {
+    background: floralwhite;
+}
+.Hafnia {
+    background: greenyellow;
+}
+.Klebsiella {
+    background: lightcyan;
+}
+.subsp {
+    background: olive;
+}
+.Kluyvera {
+    background: orchid;
+}
+.Morganella {
+    background: rosybrown;
+}
+.Obesumbacterium {
+    background: springgreen;
+}
+.Proteus {
+    background: wheat;
+}
+.Providencia {
+    background: gainsboro;
+}
+.Rahnella {
+    background: hotpink;
+}
+.Salmonella {
+    background: lightcoral;
+}
+.Serratia {
+    background: lightslategray;
+}
+.Shigella {
+    background: darkkhaki;
+}
+.Tatumella {
+    background: mediumslateblue;
+}
+.Yersinia {
+    background: orangered;
+}

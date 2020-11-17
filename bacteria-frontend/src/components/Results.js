@@ -6,13 +6,26 @@ export default class Results extends Component {
     console.log("Entered child component")
     console.log(this.props.resultList)
   }
-    render() {
-        return(
+  
+  getGenus(name){
+    var secondaryClass = name.split(" ")[0]
+    if (secondaryClass.charAt(secondaryClass.length - 1) === '.') {
+      secondaryClass = secondaryClass.substr(0, secondaryClass.length - 1);
+    }
+
+    return "result-element " + secondaryClass
+  }
+
+  render() {
+      if(this.props.resultList){
+          return(  
           <div id="result-container">
               {this.props.resultList.map(name => (
-              <p class="result-element" id={name}><font size="3">{name}</font></p>
-            ))}
+              <p class={this.getGenus(name)} id={name}><font size="3" color="black">{name}</font></p>
+              ))}
           </div>
-        )
+          )
       }
+      return null
+    }
 }
