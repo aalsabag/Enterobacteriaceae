@@ -8,7 +8,7 @@ function App() {
       <header className="bacteria-header">
         <div id="title-bar">
           <img src={logo} className="App-logo" alt="logo" id="logo-left"/>
-          <div id="title-text">Identifying Enterobacteriaceae</div>
+          <div id="title-text"><u>Identifying Enterobacteriaceae</u></div>
           <img src={logo} className="App-logo" alt="logo"id="logo-right" />
         </div>
         <FullForm />

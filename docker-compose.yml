@@ -18,7 +18,7 @@ services:
     depends_on:
       - db
     build:
-      context: .
+      context: ./bacteria-backend
       dockerfile: Dockerfile.backend
     ports:
       - "9002:9002"

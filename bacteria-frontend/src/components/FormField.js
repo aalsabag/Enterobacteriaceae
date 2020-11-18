@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Multiselect } from 'multiselect-react-dropdown';
-
+import './FormField.css'
 export default class FormField extends Component {
   constructor(props){
     super(props);
@@ -40,7 +40,7 @@ export default class FormField extends Component {
       };
         return(
           <div>
-            <p>{this.props.title}</p>
+            <p class="bacteria-titles">{this.props.title}</p>
             <Multiselect
             id={this.props.keyValue}
             style={mystyle}

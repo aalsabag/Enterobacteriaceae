@@ -1,6 +1,15 @@
-..Bacteria-Frontend {
-  text-align: center;
+html {
+  max-width: 100%;
+  overflow-x: hidden;
 }
+
+body {
+  overflow-x: none;
+  max-width: 100%;
+}
+/* .Bacteria-Frontend {
+  text-align: center;
+} */
 
 #title-bar {
   width: 100%;
