@@ -18,4 +18,6 @@
 .section-results {
     width: 25%;
     max-width: 25%;
+    display: block;
+    margin-right: 1%;
 }
