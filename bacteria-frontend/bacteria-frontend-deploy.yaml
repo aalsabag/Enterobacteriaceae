@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: docker.io/howcansheslap/bacteria-frontend:1.0.1
+        image: docker.io/howcansheslap/bacteria-frontend:1.0.3
         command:
           - npm
           - run
@@ -54,7 +54,7 @@ spec:
   tls:
   - hosts:
     - bacteria.alsabagtech.com
-    secretName: tls-secret
+    secretName: tls-secret2
   rules:
   - host: bacteria.alsabagtech.com
     http:

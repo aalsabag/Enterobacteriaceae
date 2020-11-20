@@ -21,7 +21,7 @@ export default class Results extends Component {
           return(  
           <div id="result-container">
               {this.props.resultList.map(name => (
-              <p class={this.getGenus(name)} id={name}><font size="3" color="black">{name}</font></p>
+              <p class={this.getGenus(name)} id={name}><font size="2.5" color="black">{name}</font></p>
               ))}
           </div>
           )

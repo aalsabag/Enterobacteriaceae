@@ -1,9 +1,7 @@
 #result-container {
     padding-top: 10%;
     height: 100%;
-    width: 100%;
-    padding-left: 10px;
-    padding-right: 50px;
+    padding-right: 10px;
     max-width: 95%;
 }
 
@@ -12,8 +10,9 @@
     display: inline-flex;
     overflow: auto;
     text-align: center;
+    vertical-align: middle;
     padding-left: 10px;
-    padding-right: 20px;
+    padding-right: 10px;
     max-width: 100%;
     animation: slideMe .7s ease-in;
   }

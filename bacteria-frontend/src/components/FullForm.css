@@ -1,7 +1,6 @@
 #full-section {
     display: flex;                  /* establish flex container */
     flex-direction: row;
-    width: 100%;
     max-width: 100%;
     padding: 10px;
     padding-bottom: 10px;
@@ -19,5 +18,5 @@
     width: 25%;
     max-width: 25%;
     display: block;
-    margin-right: 1%;
+    margin-right: 15px;
 }
