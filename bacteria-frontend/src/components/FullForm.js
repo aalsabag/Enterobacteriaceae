@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import FormField from './FormField';
 import './FullForm.css';
 import Results from './Results.js';
+import {
+  BrowserView,
+  MobileView,
+  isBrowser,
+  isMobile
+} from "react-device-detect";
 export default class FullForm extends Component {
     
     constructor(props) {
@@ -86,7 +92,7 @@ export default class FullForm extends Component {
     render() {
         return(
           <div id="full-section">
-            <div class="section">
+            <div class="section-selections">
             <FormField title="Indole production" keyValue="indole" action={this.handler}/>
             <FormField title="Methyl Red" keyValue="methyl_red" action={this.handler}/>
             <FormField title="Voges-Proskauer" keyValue="voges_proskauer" action={this.handler}/>
@@ -103,8 +109,6 @@ export default class FullForm extends Component {
             <FormField title="Gelatin Liquefaction at 22C" keyValue="gelatin" action={this.handler}/> 
             <FormField title="KCN, growth in" keyValue="kcn" action={this.handler}/> 
             <FormField title="Malonate Utilization" keyValue="malonate_utilization" action={this.handler}/> 
-            </div>
-            <div class="section">
             <FormField title="D-Glucose, acid production" keyValue="acid_production" action={this.handler}/> 
             
             <FormField title="D-Glucose, gas production" keyValue="gas_production" action={this.handler}/> 
@@ -123,8 +127,6 @@ export default class FullForm extends Component {
             <FormField title="L-Rhamnose" keyValue="lrhamnose" action={this.handler}/> 
             <FormField title="Maltose" keyValue="maltose" action={this.handler}/> 
             <FormField title="D-Xylose" keyValue="dxylose" action={this.handler}/> 
-            </div>
-            <div class="section">
             <FormField title="Trehalose" keyValue="trehalose" action={this.handler}/> 
             
             <FormField title="Cellobiose" keyValue="cellobiose" action={this.handler}/> 
@@ -144,10 +146,10 @@ export default class FullForm extends Component {
             <FormField title="D-Mannose" keyValue="dmannose" action={this.handler}/> 
             </div>
 
-            <div id="results" class="section">
+            <div id="results" class="section-results">
             <Results resultList={this.state.resultList}></Results>
             </div>
-              
+
           </div>
         )
       }

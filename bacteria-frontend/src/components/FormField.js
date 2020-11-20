@@ -30,6 +30,9 @@ export default class FormField extends Component {
   
     render() {
       const mystyle = {
+        multiselectContainer: {
+          width: "95%"
+        },
         option: {
           color: "green"
         },
@@ -39,7 +42,7 @@ export default class FormField extends Component {
         fontFamily: "Arial"
       };
         return(
-          <div>
+          <div class="input-block">
             <p class="bacteria-titles">{this.props.title}</p>
             <Multiselect
             id={this.props.keyValue}
