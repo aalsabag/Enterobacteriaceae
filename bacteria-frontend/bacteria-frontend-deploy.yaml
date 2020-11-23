@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: docker.io/howcansheslap/bacteria-frontend:1.0.3
+        image: docker.io/howcansheslap/bacteria-frontend:1.0.4
         command:
           - npm
           - run
