@@ -34,8 +34,11 @@ export default class FormField extends Component {
           width: "95%"
         },
         option: {
-          color: "green"
+          color: "green",
+          fontSize: "60%",
+          backgroundColor: "white"
         },
+
         color: "red",
         backgroundColor: "DodgerBlue",
         padding: "10px",
@@ -43,7 +46,9 @@ export default class FormField extends Component {
       };
         return(
           <div class="input-block">
-            <p class="bacteria-titles">{this.props.title}</p>
+            <div class="bacteria-title-wrapper">
+              <p class="bacteria-titles">{this.props.title}</p>
+            </div>
             <Multiselect
             id={this.props.keyValue}
             style={mystyle}

@@ -16,12 +16,21 @@ export default class Results extends Component {
     return "result-element " + secondaryClass
   }
 
+  getGenusWiki(name){
+    var secondaryClass = name.split(" ")[0]
+    if (secondaryClass.charAt(secondaryClass.length - 1) === '.') {
+      secondaryClass = secondaryClass.substr(0, secondaryClass.length - 1);
+    }
+    if (name === "Cedecea davisoe"){name = "Cedecea davisae"}
+    return "https://en.wikipedia.org/wiki/" + name.replace(" ", "_")
+  }
+
   render() {
       if(this.props.resultList){
           return(  
           <div id="result-container">
               {this.props.resultList.map(name => (
-              <p class={this.getGenus(name)} id={name}><font size="2.5" color="black">{name}</font></p>
+              <a href={this.getGenusWiki(name)} class="result-href"><p class={this.getGenus(name)} id={name}><font size="2.5" color="black">{name}</font></p></a>
               ))}
           </div>
           )

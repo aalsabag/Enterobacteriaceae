@@ -15,12 +15,17 @@
     padding-right: 10px;
     max-width: 100%;
     animation: slideMe .7s ease-in;
+    margin-right: 3px;
   }
 
   .result-element:hover {
     opacity: 0.5;
   }
 
+  .result-href {
+      text-decoration: none;
+  }
+  
   @keyframes slideMe{
     0%{
         transform: skewX(53deg) translateX(-500px);
