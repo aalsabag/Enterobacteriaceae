@@ -1,10 +1,11 @@
 .input-block {
   width: 98%;
+  height: fit-content;
 }
 .bacteria-titles {
     font-size: 80%;
     word-wrap: break-word;
   }
 .bacteria-title-wrapper {
-  height: 30%;
+  height: 7vh;
 }
