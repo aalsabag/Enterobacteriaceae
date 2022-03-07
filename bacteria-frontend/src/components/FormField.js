@@ -35,14 +35,8 @@ export default class FormField extends Component {
         },
         option: {
           color: "green",
-          fontSize: "60%",
-          backgroundColor: "white"
+          fontSize: "60%"
         },
-
-        color: "red",
-        backgroundColor: "DodgerBlue",
-        padding: "10px",
-        fontFamily: "Arial"
       };
         return(
           <div class="input-block">
@@ -56,7 +50,7 @@ export default class FormField extends Component {
             selectedValues={this.state.selectedValue} // Preselected value to persist in dropdown
             onSelect={this.onSelect} // Function will trigger on select event
             onRemove={this.onRemove} // Function will trigger on remove event
-            displayValue="name" // Property name to display in the dropdown options
+            displayValue={"name"} // Property name to display in the dropdown options
             avoidHighlightFirstOption="true"
             />
           </div>

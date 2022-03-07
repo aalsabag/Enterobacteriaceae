@@ -9,3 +9,11 @@
 .bacteria-title-wrapper {
   height: 7vh;
 }
+
+.searchBox::placeholder {
+  color: gray;
+}
+
+.searchBox {
+  color: lightgray;
+}

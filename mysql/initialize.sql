@@ -10,10 +10,10 @@ CREATE TABLE IF NOT EXISTS biochemical_tests (
     citrate_simmons INT,
     hydrogen_sulfide INT,
     urease INT,
-    phenylalanine_deamin INT,
+    phenylalanine_deaminase INT,
     lysine_decarboxylase INT,
     arginine_dihydrolase INT,
-    ornithine_decarboxyl INT,
+    ornithine_decarboxylase INT,
     motility INT,
     gelatin INT,
     kcn INT,
@@ -55,11 +55,11 @@ CREATE TABLE IF NOT EXISTS biochemical_tests (
 -- 5 indicates 0%-10% of the strains are positive
 
 -- instantiate rows
--- INSERT INTO `biochemical_tests` (`bacteria_name`,`indole`,`methyl_red`,`voges_proskauer`,`citrate_simmons`,`hydrogen_sulfide`,`urease`,`phenylalanine_deamin`,`lysine_decarboxylase`,`arginine_dihydrolase`,`ornithine_decarboxyl`,`motility`,`gelatin`,`kcn`,`malonate_utilization`,`acid_production`,`gas_production`,`lactose`,`sucrose`,`dmannitol`,`dulcitol`,`salicin`,`dadonitol`,`myo_inositol`,`dsorbitol`,`larabinose`,`raffinose`,`lrhamnose`,`maltose`,`dxylose`,`trehalose`,`cellobiose`,`methyl_glucoside`,`esculing`,`melibiose`,`darabitol`,`mucate`,`lipase`,`drn`,`nitrate`,`oxidase`,`onpg`,`yellow`,`dmannose`) VALUES ('Salmonella IV', 5, 1, 5, 1, 1);
--- INSERT INTO `biochemical_tests` (`bacteria_name`,`indole`,`methyl_red`,`voges_proskauer`,`citrate_simmons`,`hydrogen_sulfide`,`urease`,`phenylalanine_deamin`,`lysine_decarboxylase`,`arginine_dihydrolase`,`ornithine_decarboxyl`,`motility`,`gelatin`,`kcn`,`malonate_utilization`,`acid_production`,`gas_production`,`lactose`,`sucrose`,`dmannitol`,`dulcitol`,`salicin`,`dadonitol`,`myo_inositol`,`dsorbitol`,`larabinose`,`raffinose`,`lrhamnose`,`maltose`,`dxylose`,`trehalose`,`cellobiose`,`methyl_glucoside`,`esculing`,`melibiose`,`darabitol`,`mucate`,`lipase`,`drn`,`nitrate`,`oxidase`,`onpg`,`yellow`,`dmannose`) VALUES ('Salmonella choleraesuis', 5, 1, 5, 4, 3);
+-- INSERT INTO `biochemical_tests` (`bacteria_name`,`indole`,`methyl_red`,`voges_proskauer`,`citrate_simmons`,`hydrogen_sulfide`,`urease`,`phenylalanine_deaminase`,`lysine_decarboxylase`,`arginine_dihydrolase`,`ornithine_decarboxylase`,`motility`,`gelatin`,`kcn`,`malonate_utilization`,`acid_production`,`gas_production`,`lactose`,`sucrose`,`dmannitol`,`dulcitol`,`salicin`,`dadonitol`,`myo_inositol`,`dsorbitol`,`larabinose`,`raffinose`,`lrhamnose`,`maltose`,`dxylose`,`trehalose`,`cellobiose`,`methyl_glucoside`,`esculing`,`melibiose`,`darabitol`,`mucate`,`lipase`,`drn`,`nitrate`,`oxidase`,`onpg`,`yellow`,`dmannose`) VALUES ('Salmonella IV', 5, 1, 5, 1, 1);
+-- INSERT INTO `biochemical_tests` (`bacteria_name`,`indole`,`methyl_red`,`voges_proskauer`,`citrate_simmons`,`hydrogen_sulfide`,`urease`,`phenylalanine_deaminase`,`lysine_decarboxylase`,`arginine_dihydrolase`,`ornithine_decarboxylase`,`motility`,`gelatin`,`kcn`,`malonate_utilization`,`acid_production`,`gas_production`,`lactose`,`sucrose`,`dmannitol`,`dulcitol`,`salicin`,`dadonitol`,`myo_inositol`,`dsorbitol`,`larabinose`,`raffinose`,`lrhamnose`,`maltose`,`dxylose`,`trehalose`,`cellobiose`,`methyl_glucoside`,`esculing`,`melibiose`,`darabitol`,`mucate`,`lipase`,`drn`,`nitrate`,`oxidase`,`onpg`,`yellow`,`dmannose`) VALUES ('Salmonella choleraesuis', 5, 1, 5, 4, 3);
 
 INSERT INTO 
-`biochemical_tests` (`bacteria_name`,`indole`,`methyl_red`,`voges_proskauer`,`citrate_simmons`,`hydrogen_sulfide`,`urease`,`phenylalanine_deamin`,`lysine_decarboxylase`,`arginine_dihydrolase`,`ornithine_decarboxyl`,`motility`,`gelatin`,`kcn`,`malonate_utilization`,`acid_production`,`gas_production`,`lactose`,`sucrose`,`dmannitol`,`dulcitol`,`salicin`,`dadonitol`,`myo_inositol`,`dsorbitol`,`larabinose`,`raffinose`,`lrhamnose`,`maltose`,`dxylose`,`trehalose`,`cellobiose`,`methyl_glucoside`,`esculing`,`melibiose`,`darabitol`,`mucate`,`lipase`,`drn`,`nitrate`,`oxidase`,`onpg`,`yellow`,`dmannose`) 
+`biochemical_tests` (`bacteria_name`,`indole`,`methyl_red`,`voges_proskauer`,`citrate_simmons`,`hydrogen_sulfide`,`urease`,`phenylalanine_deaminase`,`lysine_decarboxylase`,`arginine_dihydrolase`,`ornithine_decarboxylase`,`motility`,`gelatin`,`kcn`,`malonate_utilization`,`acid_production`,`gas_production`,`lactose`,`sucrose`,`dmannitol`,`dulcitol`,`salicin`,`dadonitol`,`myo_inositol`,`dsorbitol`,`larabinose`,`raffinose`,`lrhamnose`,`maltose`,`dxylose`,`trehalose`,`cellobiose`,`methyl_glucoside`,`esculing`,`melibiose`,`darabitol`,`mucate`,`lipase`,`drn`,`nitrate`,`oxidase`,`onpg`,`yellow`,`dmannose`) 
 VALUES 
  ('Cedecea davisoe', 5,1,2,1,5,5,5,5,3,1,1,5,2,2,1,2,5,1,1,5,1,5,5,5,5,5,5,1,1,1,1,5,3,5,1,5,2,5,1,5,2,5,1),
  ('Cedecea lapagei', 5,3,1,2,5,5,5,5,2,5,2,5,3,1,1,1,3,5,1,5,1,5,5,5,5,5,5,1,5,1,1,5,1,5,1,5,1,5,1,5,1,5,1),
