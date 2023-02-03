@@ -17,11 +17,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: docker.io/howcansheslap/bacteria-frontend:1.0.7
-        command:
-          - npm
-          - run
-          - start-prod
+        image: docker.io/howcansheslap/bacteria-frontend:1.0.6
         ports:
         - containerPort: 80
 
